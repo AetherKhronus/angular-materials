@@ -1,0 +1,31 @@
+<h1 class = "centered"> Date Pickers </h1>
+
+<div class = "top-margin5 bot-margin5 centered">
+
+    <mat-form-field>
+
+        <mat-label>
+            Birthday
+        </mat-label>
+        <input matInput (focus) = "birthday.open()" [min] = "minDate" [max] = "maxDate" [matDatepicker] = "birthday">
+        <mat-hint>
+            MM/DD/YYYY
+        </mat-hint>
+        <mat-datepicker-toggle matSuffix [for] = "birthday"></mat-datepicker-toggle>
+        <mat-datepicker #birthday touchUi = "true"></mat-datepicker>
+
+    </mat-form-field>
+
+    
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "centered topMargin10">
+
+    <button type = "button" mat-raised-button routerLink = "/home">
+        Home Page
+    </button>
+    
+</div>

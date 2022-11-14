@@ -1,0 +1,12 @@
+div {
+    margin: 2em;
+}
+
+ul { 
+	padding: 5px; 
+	list-style-type: none; 
+}
+
+ul li {
+    margin-bottom: 20px;
+}

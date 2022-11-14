@@ -1,0 +1,39 @@
+<h1 class = "centered"> Badges </h1>
+
+<div class = "top-margin5 bot-margin5 centered">
+
+    <div>
+
+        <button mat-raised-button (click) = "removeCount()">
+            Remove
+        </button>
+
+    </div>
+    
+    <div>
+
+        <mat-icon [matBadge] = "count" matBadgeColor = "warn"> 
+            home 
+        </mat-icon>
+
+    </div>
+
+    <div>
+
+        <button mat-raised-button (click) = "addCount()">
+            Add
+        </button>
+
+    </div>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "centered topMargin10">
+
+    <button type = "button" mat-raised-button routerLink = "/home">
+        Home Page
+    </button>
+    
+</div>

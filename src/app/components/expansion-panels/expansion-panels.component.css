@@ -1,0 +1,11 @@
+div {
+    margin: 2em;
+}
+
+mat-expansion-panel-header {
+    width: 400px;
+}
+
+mat-panel-title {
+    width: 30%;
+}

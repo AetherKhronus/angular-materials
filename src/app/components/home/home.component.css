@@ -1,0 +1,17 @@
+ul { 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    margin: 10px;
+}
+
+.menu {
+    width: 55%;
+    margin: auto;
+}

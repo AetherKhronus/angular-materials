@@ -1,0 +1,33 @@
+<h1 class = "centered"> Inputs </h1>
+
+<div class = "top-margin5 bot-margin5 centered">
+
+    <mat-form-field>
+
+        <input ngModel #username = "ngModel" name = "username" matInput type = "text" placeholder = "username" required>
+        <mat-hint>
+            Type an unique username.
+        </mat-hint>
+        <span matPrefix>
+            admin.
+        </span>
+        <span matSuffix>
+            @domain.com
+        </span>
+        <mat-error *ngIf = "username.invalid && username.errors!['required']">
+            The username field is required.
+        </mat-error>
+
+      </mat-form-field>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "centered topMargin10">
+
+    <button type = "button" mat-raised-button routerLink = "/home">
+        Home Page
+    </button>
+    
+</div>

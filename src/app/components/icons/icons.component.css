@@ -1,0 +1,41 @@
+div {
+    margin: 2em;
+}
+
+ul { 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    margin: 10px;
+}
+
+.menu {
+    width: 35%;
+    margin: auto;
+}
+
+.pink {
+    color: pink;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(25, 216, 25);
+}
+
+.yellow {
+    color: rgb(255, 230, 0);
+}
+
+.blue {
+    color: blue;
+}

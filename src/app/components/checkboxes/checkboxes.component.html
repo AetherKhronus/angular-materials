@@ -1,0 +1,36 @@
+<h1 class = "centered"> Checkboxes </h1>
+
+<div class = "top-margin5 bot-margin2">
+
+    <mat-checkbox [checked] = "isChecked" (change) = "onChange($event.checked)">
+        Subscribe to newsletter
+    </mat-checkbox>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "top-margin2 bot-margin2">
+
+    <h2> Information </h2>
+
+    <mat-checkbox #showDetails [checked] = "isChecked" (change) = "onChange($event.checked)">
+        Show details
+    </mat-checkbox>
+
+
+    <div *ngIf = "showDetails.checked">
+        More information...
+    </div>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div class = "centered topMargin10">
+
+    <button type = "button" mat-raised-button routerLink = "/home">
+        Home Page
+    </button>
+    
+</div>
