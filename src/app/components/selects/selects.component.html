@@ -1,10 +1,10 @@
-<h1 class = "centered"> Selects </h1>
+<h1 class = "centered mat-display-2"> Selects </h1>
 
 <div class = "top-margin5 bot-margin2">
 
-    <mat-label> Color: </mat-label>
+    <mat-label class = "mat-subheading-2"> Color: </mat-label>
     <mat-select [(ngModel)] = "color">
-        <mat-option *ngFor = "let color of colors" [value] = "color.id">
+        <mat-option class = "mat-body-2" *ngFor = "let color of colors" [value] = "color.id">
             {{ color.name }}
         </mat-option>
     </mat-select>
@@ -15,7 +15,7 @@
 
 <div class = "centered topMargin10">
 
-    <button type = "button" mat-raised-button routerLink = "/home">
+    <button class = "mat-button" type = "button" mat-raised-button routerLink = "/home">
         Home Page
     </button>
     

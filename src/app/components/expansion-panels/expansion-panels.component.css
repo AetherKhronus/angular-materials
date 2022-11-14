@@ -3,9 +3,9 @@ div {
 }
 
 mat-expansion-panel-header {
-    width: 400px;
+    width: 500px;
 }
 
 mat-panel-title {
-    width: 30%;
+    width: 40%;
 }

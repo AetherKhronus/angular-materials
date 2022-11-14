@@ -1,24 +1,25 @@
-<h1 class = "centered"> Inputs </h1>
+<h1 class = "centered mat-display-2"> Inputs </h1>
 
 <div class = "top-margin5 bot-margin5 centered">
 
     <mat-form-field>
 
-        <input ngModel #username = "ngModel" name = "username" matInput type = "text" placeholder = "username" required>
-        <mat-hint>
+        <input class = "mat-input" ngModel #username = "ngModel" name = "username" matInput type = "text" placeholder = "username" required>
+        
+        <mat-hint class = "mat-caption">
             Type an unique username.
         </mat-hint>
-        <span matPrefix>
+        <span class = "mat-body-1" matPrefix>
             admin.
         </span>
-        <span matSuffix>
+        <span class = "mat-body-1" matSuffix>
             @domain.com
         </span>
-        <mat-error *ngIf = "username.invalid && username.errors!['required']">
+        <mat-error class = "mat-caption" *ngIf = "username.invalid && username.errors!['required']">
             The username field is required.
         </mat-error>
 
-      </mat-form-field>
+    </mat-form-field>
 
 </div>
 
@@ -26,7 +27,7 @@
 
 <div class = "centered topMargin10">
 
-    <button type = "button" mat-raised-button routerLink = "/home">
+    <button class = "mat-button" type = "button" mat-raised-button routerLink = "/home">
         Home Page
     </button>
     

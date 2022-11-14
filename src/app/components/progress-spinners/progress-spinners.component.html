@@ -1,45 +1,42 @@
-<h1 class = "centered"> Progress Spinners </h1>
+<h1 class = "centered mat-display-2"> Progress Spinners </h1>
 
 <div class = "top-margin5 bot-margin5">
 
-    <div>
-
-        <ul>
+    <ul>
     
-            <li>
-                <h2> Determinate </h2> 
-                <mat-spinner mode = "determinate" *ngIf = "isLoading1" [value] = "progress"></mat-spinner>
+        <li>
+            <h2 class = "mat-title"> Determinate </h2> 
+            <mat-spinner mode = "determinate" *ngIf = "isLoading1" [value] = "progress"></mat-spinner>
 
-                <div>
-                    <button type = "button" mat-raised-button (click) = "start()">
-                        Start Download
-                    </button>
-                </div>
-            </li>
+            <div>
+                <button class = "mat-button" type = "button" mat-raised-button (click) = "start()">
+                    Start Download
+                </button>
+            </div>
+        </li>
 
-            <li>
-                <h2> Indeterminate </h2> 
-                <mat-spinner mode = "indeterminate" *ngIf = "isLoading2"></mat-spinner>
+        <li>
+            <h2 class = "mat-title"> Indeterminate </h2> 
+            <mat-spinner mode = "indeterminate" *ngIf = "isLoading2"></mat-spinner>
 
-                <div>
+            <div>
 
-                    <button type = "button" mat-raised-button (click) = "connect()">
-                        Connect to Server
-                    </button>
+                <button class = "mat-button" type = "button" mat-raised-button (click) = "connect()">
+                    Connect to Server
+                </button>
 
-                </div>
-            </li>
+            </div>
+        </li>
 
-        </ul>
+    </ul>
     
-    </div>
 </div>
 
 <mat-divider></mat-divider>
 
 <div class = "centered topMargin10">
 
-    <button type = "button" mat-raised-button routerLink = "/home">
+    <button class = "mat-button" type = "button" mat-raised-button routerLink = "/home">
         Home Page
     </button>
     

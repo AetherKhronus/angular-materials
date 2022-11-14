@@ -1,22 +1,20 @@
-<h1 class = "centered"> Date Pickers </h1>
+<h1 class = "centered mat-display-2"> Date Pickers </h1>
 
 <div class = "top-margin5 bot-margin5 centered">
 
     <mat-form-field>
 
-        <mat-label>
+        <mat-label class = "mat-subheading-2">
             Birthday
         </mat-label>
         <input matInput (focus) = "birthday.open()" [min] = "minDate" [max] = "maxDate" [matDatepicker] = "birthday">
-        <mat-hint>
+        <mat-hint class = "mat-caption">
             MM/DD/YYYY
         </mat-hint>
         <mat-datepicker-toggle matSuffix [for] = "birthday"></mat-datepicker-toggle>
-        <mat-datepicker #birthday touchUi = "true"></mat-datepicker>
+        <mat-datepicker class = "mat-input" #birthday touchUi = "true"></mat-datepicker>
 
     </mat-form-field>
-
-    
 
 </div>
 
@@ -24,7 +22,7 @@
 
 <div class = "centered topMargin10">
 
-    <button type = "button" mat-raised-button routerLink = "/home">
+    <button class = "mat-button" type = "button" mat-raised-button routerLink = "/home">
         Home Page
     </button>
     

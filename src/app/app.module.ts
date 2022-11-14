@@ -4,24 +4,7 @@ import { FormsModule , ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { Routes , RouterModule } from "@angular/router";
 
-import { MatNativeDateModule } from "@angular/material/core";
-import { MatCheckboxModule } from "@angular/material/checkbox";
-import { MatDividerModule } from "@angular/material/divider";
-import { MatRadioModule } from "@angular/material/radio";
-import { MatSelectModule } from "@angular/material/select";
-import { MatInputModule } from "@angular/material/input";
-import { MatDatepickerModule } from "@angular/material/datepicker";
-import { MatIconModule } from "@angular/material/icon";
-import { MatButtonModule } from "@angular/material/button";
-import { MatChipsModule } from "@angular/material/chips";
-import { MatProgressBarModule } from "@angular/material/progress-bar";
-import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import { MatTooltipModule } from "@angular/material/tooltip";
-import { MatTabsModule } from "@angular/material/tabs";
-import { MatDialogModule } from "@angular/material/dialog";
-import { MatAutocompleteModule } from "@angular/material/autocomplete";
-import { MatBadgeModule } from "@angular/material/badge";
-import { MatExpansionModule } from "@angular/material/expansion";
+import { MatComponentsModule } from "./modules/mat-components.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -61,7 +44,7 @@ const routes: Routes = [
     { path : "chips" , component: ChipsComponent } ,
     { path : "date-pickers" , component: DatepickersComponent } ,
     { path : "dialogs" , component: DialogsComponent } ,
-    { path : "expansion-panel" , component: ExpansionPanelsComponent } ,
+    { path : "expansion-panels" , component: ExpansionPanelsComponent } ,
     { path : "icons" , component: IconsComponent } ,
     { path : "inputs" , component: InputsComponent } ,
     { path : "progress-bars" , component: ProgressBarsComponent } ,
@@ -111,24 +94,7 @@ const routes: Routes = [
         RouterModule.forRoot(routes) ,
         ReactiveFormsModule ,
         FormsModule ,
-        MatNativeDateModule ,
-        MatCheckboxModule ,
-        MatDividerModule ,
-        MatRadioModule ,
-        MatSelectModule ,
-        MatInputModule ,
-        MatDatepickerModule ,
-        MatIconModule ,
-        MatButtonModule ,
-        MatChipsModule ,
-        MatProgressBarModule ,
-        MatProgressSpinnerModule ,
-        MatTooltipModule ,
-        MatTabsModule ,
-        MatDialogModule ,
-        MatAutocompleteModule ,
-        MatBadgeModule ,
-        MatExpansionModule
+        MatComponentsModule
     ] ,
     exports: [
         RouterModule
